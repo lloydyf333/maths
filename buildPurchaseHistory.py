@@ -1,3 +1,10 @@
+def totalItems():	
+	h = open('history.txt', 'r')
+	line = h.readline()
+	items = (line.split(' ')[1])
+
+	return int(items)
+
 def buildPurchaseHistory(itemID):
 	array = np.zeros(totalItems(), dtype=np.int)
 	h = open('history.txt', 'r')
